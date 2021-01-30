@@ -1,10 +1,8 @@
-const Pet = ({ name, animal, breed }) => {
-  return React.createElement("div", {}, [
-    React.createElement("h1", { key: 1 }, name),
-    React.createElement("h2", { key: 2 }, animal),
-    React.createElement("h2", { key: 3 }, breed),
-  ]);
-};
+import React from 'react';
+import ReactDOM from 'react-dom';
+// import { render } from 'react-dom';
+// Now you can directly use render() instead of ReactDOM.render()
+import Pet from './Pet';
 
 const App = () => {
   return React.createElement("div", {}, [
