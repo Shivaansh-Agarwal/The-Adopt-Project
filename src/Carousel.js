@@ -9,9 +9,10 @@ class Carousel extends React.Component {
     };
   }
   // add event listener
-  handleIndexClick = event => {
+  handleIndexClick = (event) => {
     this.setState({
-      active: +event.target.dataset.index
+      // active: +event.target.dataset.index
+      active: parseInt(event.target.dataset.index, 10),
     });
   };
   static getDerivedStateFromProps({ media }) {
